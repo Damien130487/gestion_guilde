@@ -1,0 +1,126 @@
+#parent
+{
+ height: 95vh;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: 1fr 0.5fr 5fr 1fr;
+ grid-template-areas: 
+ "header header header"
+ "nav nav nav"
+ "aside main main"
+ "footer footer footer"
+ ;
+ background-color:coral;
+ padding:5px;
+}
+
+div div
+{
+ border: 3px solid black;
+ background-color: white;
+ margin: 5px;
+ text-align: center;
+}
+
+header
+{
+    display: flex;
+    background: url('img/Ban_mountyhall.jpeg');
+    background-repeat: no-repeat;
+    grid-area: header;
+    text-align: center;
+
+}
+
+#divLogo
+{
+ flex-grow:1;
+ width: 100px;
+ height: 100px;
+ background-image: url('img/téléchargement.jpg');
+ border-radius: 15%;
+ background-repeat: no-repeat;
+ background-size : cover;
+ background-image
+}
+header h1
+{
+    flex-grow:10;
+    margin: auto;
+}
+
+#divBouton
+{
+  flex-grow:1;
+  margin: auto;
+  border: none;
+  background-color: cadetblue;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(94, 235, 239);
+    grid-area: nav;
+    text-align: center;
+
+}
+.link
+{
+    flex-grow: 1;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: auto;
+    color: black;
+
+}
+
+aside
+{
+    background-color: rgb(26, 11, 235);
+    grid-area: aside;
+    text-align: center;  
+}
+
+main
+{
+    background-color: rgb(237, 233, 18);
+    grid-area: main;
+    text-align: center; 
+}
+
+footer
+{
+    display: flex;
+    background-color: rgb(143, 27, 149);
+    grid-area: footer;
+    text-align: center;
+}
+
+footer div
+{
+    flex-grow: 1;
+    border: 2px solid black;
+    border-radius: 1;
+    
+}
+
+footer div ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    width: 33%;
+    padding-left: 2px;
+    list-style-type: none;
+}
+
+footer div ul li a
+{
+  text-decoration: none;
+  color:#1809ee;
+  font-size: 1.2em;
+  text-align: center;
+
+}
